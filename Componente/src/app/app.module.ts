@@ -7,18 +7,19 @@ import { CardComponent } from './card/card.component';
 import { Card2Component } from './card2/card2.component';
 import { CardButtonComponent } from './card-button/card-button.component';
 import { Card2ButtonComponent } from './card2-button/card2-button.component';
+import { CardsModule } from './cards/cards.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent,
     Card2Component,
     CardButtonComponent,
     Card2ButtonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CardsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
