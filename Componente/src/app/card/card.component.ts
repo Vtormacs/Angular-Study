@@ -1,5 +1,14 @@
 import { Component } from '@angular/core';
 
+interface IPlano {
+  infos: IInfos
+}
+
+interface IInfos{
+  tipo: string;
+  preco: number;
+}
+
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -14,9 +23,17 @@ export class CardComponent {
   // return 'R$' + this.preco + ',00/mes';
   //}
 
-  plano = {
+  //plano = {
+  //infos: {
+  //tipo: "Simples",
+  //preco: 100,
+  //},
+  //};
+
+  // @ts-ignore
+  plano: IPlano = {
     infos: {
-      tipo: "Simples",
+      tipo: 'Simples',
       preco: 100,
     },
   };
