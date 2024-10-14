@@ -6,22 +6,22 @@ import { CardButtonComponent } from '../card-button/card-button.component';
 import { Card2ButtonComponent } from '../card2-button/card2-button.component';
 import { CardButtonCancelComponent } from '../card-button-cancel/card-button-cancel.component';
 
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 @NgModule({
   declarations: [
     CardComponent,
     Card2Component,
     CardButtonComponent,
     Card2ButtonComponent,
-    CardButtonCancelComponent
+    CardButtonCancelComponent,
   ],
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule, MatSlideToggleModule],
   exports: [
     CardComponent,
     Card2Component,
     //CardButtonComponent,
     //Card2ButtonComponent
-  ]
+  ],
 })
-export class CardsModule { }
+export class CardsModule {}
