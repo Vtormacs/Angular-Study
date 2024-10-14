@@ -21,10 +21,6 @@
   }
 }
 
-:host ::ng-deep .card-button-cancel {
-  background-color: aqua !important;
-}
-
-.global {
-  background-color: green;
+.card-button-cancel {
+  background-color: yellow;
 }
