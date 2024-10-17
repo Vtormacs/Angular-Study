@@ -1,13 +1,22 @@
 <label for="meu-input">Property binding</label>
-<input id="meu-input" [value]="inputText" [type]="inputType" [disabled]="isDisabled">
-<br>
+<input
+  id="meu-input"
+  [value]="inputText"
+  [type]="inputType"
+  [disabled]="isDisabled"
+
+  (input)="handleInputEvent($event)"
+/>
+<br />
 <button (click)="enableInput()">Habilitar</button>
 <button (click)="disableInput()">Desabilitar</button>
-<br>
+<br />
 <button (click)="textValueInput()">Alterar texto</button>
 <button (click)="textOriginal()">Texto inicial</button>
-<br>
-<button (click)="mudarTypePasswor()">mudar o type do teste para password</button>
+<br />
+<button (click)="mudarTypePasswor()">
+  mudar o type do teste para password
+</button>
 <button (click)="mudarTypeText()">mudar o type do teste para text</button>
-<br>
+<br />
 <button (click)="logInputText()">Log</button>
