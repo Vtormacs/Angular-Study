@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AttributeBindingComponent } from './attribute-binding/attribute-binding.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AttributeBindingComponent
   ],
   imports: [
     BrowserModule,

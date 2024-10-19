@@ -45,6 +45,6 @@ export class AppComponent {
 
   handleInputEvent(event: Event) {
     const currentText = (event.target as HTMLInputElement).value;
-    console.log(currentText)
+    console.log(currentText);
   }
 }
