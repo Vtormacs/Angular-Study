@@ -1,14 +1,31 @@
-<header>
-  <nav class="navbar">
-    <a href="/" class="logo">Eventicket</a>
-    <ul class="nav-links">
-      <li><a href="/events">Events</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li><a href="/create-event" class="create-event">Create Event</a></li>
-      <li><a href="/tickets">Tickets</a></li>
-      <li><a href="/wishlist">Wishlist</a></li>
-      <li><a href="/profile">Profile</a></li>
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-logo">
+      <img src="assets/logo.png" alt="Eventify logo">
+      <span class="logo-text">Eventify</span>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
-  </nav>
-</header>
+    <div class="navbar-actions">
+      <a href="#" class="action-link">Create Event</a>
+      <a href="#" class="action-icon">
+        <img src="assets/ticket-icon.png" alt="Tickets">
+      </a>
+      <a href="#" class="action-icon">
+        <img src="assets/star-icon.png" alt="Interested">
+      </a>
+      <div class="profile-dropdown">
+        <img src="assets/profile-icon.png" alt="Profile">
+        <div class="dropdown-content">
+          <a href="#">Profile</a>
+          <a href="#">Settings</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

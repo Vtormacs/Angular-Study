@@ -1,28 +1,125 @@
-nav.navbar {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+.navbar {
+  background-color: #2e2a3a;
+  padding: 10px 10px;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  background-color: #282828;
+  align-items: center;
   color: white;
-  
-  .logo {
-    font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 
-  .nav-links {
-    list-style: none;
+  .navbar-logo {
     display: flex;
-    gap: 1rem;
-    
-    li a {
-      color: white;
-      text-decoration: none;
+    align-items: center;
+
+    img {
+      width: 40px;
+      margin-right: 10px;
     }
 
-    .create-event {
-      background-color: #ffcc00;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
+    .logo-text {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffda00;
+    }
+  }
+
+  .navbar-links {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+
+    li {
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        position: relative;
+
+        &:hover {
+          color: #ffda00;
+        }
+
+        &::after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 2px;
+          background: #ffda00;
+          transition: width .3s;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .action-link {
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+
+      &:hover {
+        color: #ffda00;
+      }
+    }
+
+    .action-icon img {
+      width: 20px;
+      cursor: pointer;
+
+      &:hover {
+        filter: brightness(1.2);
+      }
+    }
+
+    .profile-dropdown {
+      position: relative;
+      img {
+        width: 25px;
+        cursor: pointer;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #2e2a3a;
+        right: 0;
+        top: 100%;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+        a {
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+
+          &:hover {
+            background-color: #575757;
+          }
+        }
+      }
+
+      &:hover .dropdown-content {
+        display: block;
+      }
     }
   }
 }
