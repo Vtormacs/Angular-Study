@@ -21,6 +21,8 @@ export class LoginComponent {
       this.router.navigate(['admin/eventos']);
     } else {
       alert('Dados incorretos');
+      console.log(this.email);
+      console.log(this.senha);
     }
   }
 }
