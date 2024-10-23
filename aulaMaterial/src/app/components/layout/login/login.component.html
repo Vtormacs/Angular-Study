@@ -13,15 +13,13 @@
   <form>
     <!-- Email input -->
     <mdb-form-control class="mb-4">
-      <input mdbInput type="email" id="form1Example1" class="form-control" />
-      <label mdbLabel class="form-label" for="form1Example1"
-        >Email</label
-      >
+      <input mdbInput type="email" id="form1Example1" class="form-control" [(ngModel)]="email" />
+      <label mdbLabel class="form-label" for="form1Example1">Email</label>
     </mdb-form-control>
 
     <!-- Password input -->
     <mdb-form-control class="mb-4">
-      <input mdbInput type="password" id="form1Example2" class="form-control" />
+      <input mdbInput type="password" id="form1Example2" class="form-control" [(ngModel)]="senha" />
       <label mdbLabel class="form-label" for="form1Example2">Senha</label>
     </mdb-form-control>
 
@@ -51,7 +49,7 @@
     </div>
 
     <!-- Submit button -->
-    <button mdbRipple type="button" class="btn btn-primary btn-block">
+    <button mdbRipple type="button" class="btn btn-primary btn-block" (click)="logar()">
       Logar
     </button>
   </form>
