@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MenuComponent } from "../menu/menu.component";
 import { RouterOutlet } from '@angular/router';
-import { RodapeComponent } from "../../rodape/rodape/rodape.component";
+import { RodapeComponent } from "../rodape/rodape.component";
 
 @Component({
   selector: 'app-principal',
