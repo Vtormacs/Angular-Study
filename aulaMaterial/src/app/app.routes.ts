@@ -5,11 +5,13 @@ import { EventoslistComponent } from './components/evento/eventoslist/eventoslis
 import { EventosdetailsComponent } from './components/evento/eventosdetails/eventosdetails.component';
 import { CirculoComponent } from './components/categoria/circulo/circulo.component';
 import { PaginaPrincipalComponent } from './components/layout/pagina-principal/pagina-principal.component';
+import { InfoUsuarioComponent } from './components/layout/info-usuario/info-usuario.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'pagina-principal', component: PaginaPrincipalComponent },
+  { path: 'info-usuario', component: InfoUsuarioComponent },
   {
     path: 'admin',
     component: PrincipalComponent,
