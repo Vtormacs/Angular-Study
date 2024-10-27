@@ -1,4 +1,10 @@
-<app-menu></app-menu>
-<router-outlet></router-outlet>
-<app-rodape></app-rodape>
+<div class="d-flex flex-column min-vh-100">
+  <!-- Conteúdo principal -->
+  <main class="flex-fill">
+    <app-menu></app-menu>
+    <router-outlet></router-outlet>
+  </main>
 
+  <!-- Footer -->
+  <app-rodape></app-rodape>
+</div>

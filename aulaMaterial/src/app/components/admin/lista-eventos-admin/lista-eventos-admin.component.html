@@ -21,7 +21,8 @@
               Categoria: {{ evento.categories }}
             </small>
           </p>
-          <a href="#" class="btn btn-primary">Comprar - R$ {{ evento.precoDoIngresso }}</a>
+          <button type="button" class="btn btn-secondary bg-warning" mdbRipple routerLink="admin/eventos/edit/{{evento.id}}">Editar</button>
+          <button type="button" class="btn btn-primary bg-danger" mdbRipple (click)="deletar()">Deletar</button>
         </div>
       </div>
     </div>

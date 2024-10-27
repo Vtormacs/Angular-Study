@@ -3,15 +3,16 @@ import { Evento } from '../../../models/evento';
 import { Endereco } from '../../../models/endereco';
 import { Categoria } from '../../../models/categoria';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-eventoslist',
+  selector: 'app-lista-eventos-admin',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './eventoslist.component.html',
-  styleUrls: ['./eventoslist.component.scss'],
+  imports: [CommonModule, RouterLink],
+  templateUrl: './lista-eventos-admin.component.html',
+  styleUrl: './lista-eventos-admin.component.scss',
 })
-export class EventoslistComponent {
+export class ListaEventosAdminComponent {
   lista: Evento[] = [];
 
   constructor() {
@@ -67,5 +68,9 @@ export class EventoslistComponent {
         new Set([categoriaTeatro])
       )
     );
+  }
+
+  deletar(){
+
   }
 }

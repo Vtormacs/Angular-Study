@@ -1,11 +1,10 @@
 import { Routes } from '@angular/router';
 import { LoginComponent } from './components/layout/login/login.component';
 import { PrincipalComponent } from './components/layout/principal/principal.component';
-import { EventoslistComponent } from './components/evento/eventoslist/eventoslist.component';
-import { EventosdetailsComponent } from './components/evento/eventosdetails/eventosdetails.component';
-import { CirculoComponent } from './components/categoria/circulo/circulo.component';
 import { PaginaPrincipalComponent } from './components/layout/pagina-principal/pagina-principal.component';
 import { InfoUsuarioComponent } from './components/layout/info-usuario/info-usuario.component';
+import { ListaEventosAdminComponent } from './components/admin/lista-eventos-admin/lista-eventos-admin.component';
+import { EventoDetailsAdminComponent } from './components/admin/evento-details-admin/evento-details-admin.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -16,10 +15,9 @@ export const routes: Routes = [
     path: 'admin',
     component: PrincipalComponent,
     children: [
-      { path: 'categorias', component: CirculoComponent },
-      { path: 'eventos', component: EventoslistComponent },
-      { path: 'eventos/new', component: EventosdetailsComponent },
-      { path: 'eventos/edit/:id', component: EventosdetailsComponent },
+      { path: 'eventos', component: ListaEventosAdminComponent },
+      { path: 'eventos/new', component: EventoDetailsAdminComponent },
+      { path: 'eventos/edit/:id', component: EventoDetailsAdminComponent },
     ],
   },
 ];
