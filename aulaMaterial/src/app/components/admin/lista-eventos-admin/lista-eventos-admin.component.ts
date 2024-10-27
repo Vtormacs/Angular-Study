@@ -4,11 +4,12 @@ import { Endereco } from '../../../models/endereco';
 import { Categoria } from '../../../models/categoria';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { NovoEventoBotaoComponent } from "../botoes/novo-evento-botao/novo-evento-botao.component";
 
 @Component({
   selector: 'app-lista-eventos-admin',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, NovoEventoBotaoComponent],
   templateUrl: './lista-eventos-admin.component.html',
   styleUrl: './lista-eventos-admin.component.scss',
 })
@@ -73,4 +74,5 @@ export class ListaEventosAdminComponent {
   deletar(){
 
   }
+  
 }
